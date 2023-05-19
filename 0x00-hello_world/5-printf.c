@@ -1,4 +1,5 @@
-#include <stdio>
+#include <stdio.h>
+
 /**
  * main - This is the point of entry
  *
@@ -6,7 +7,6 @@
  */
 int main(void)
 {
-	printf("with proper grammer, but the outcome is a piece of art,\n};
-
+	printf("with proper grammer, but the outcome is a piece of art,\n");
 	return (0);
 }
