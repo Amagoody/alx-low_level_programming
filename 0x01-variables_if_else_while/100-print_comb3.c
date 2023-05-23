@@ -13,18 +13,15 @@ int main(void)
 
 	for (k = 0; k < 10; k++)
 	{
-		for (l = k + 1; l <10; l++)
+		for (l = k + 1; l < 10; l++)
 		{
-			if (k != l)
-			{
-				putchar(k + '0');
-				putchar(l + '0');
-				putchar(',');
-				putchar(' ');
-				putchar('\n');
-			}
+			putchar(k + '0');
+			putchar(l + '0');
+			putchar(',');
+			putchar(' ');
 		}
 	}
+	putchar('\n');
 
 	return (0);
 }
