@@ -9,36 +9,34 @@
 
 int main(void)
 {
-	int m, n, o;
+	int x = 0;
+	int y, z;
 
-	m = 0;
-	n = 1;
-	o = 2;
-
-	while (m <= 8)
+	while (x <= 9)
 	{
-		while (n <= 9)
+		y = 0;
+		while (y <= 9)
 		{
-			while (o <= 10)
+			z = 0;
+			while (z <= 9)
 			{
-				if ((m != n) && (n != o) && (m != o))
+				if (x != y && x < y && y != z && y < z)
 				{
-					putchar(m + '0');
-					putchar(n + '0');
-					putchar(o + '0');
+					putchar(x + 48);
+					putchar(y + 48);
+					putchar(z + 48);
+
+					if (x + y + z != 24)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
-				if (m != 8)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-				o++;
+				z++;
 			}
-			n++;
-			o = n + 1;
+			y++;
 		}
-		n = m + 1;
-		m++;
+		x++;
 	}
 	putchar('\n');
 
