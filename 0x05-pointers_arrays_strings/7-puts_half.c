@@ -18,7 +18,8 @@ void puts_half(char *str)
 		str++;
 	}
 
-	str -= (length / 2);
+	str -= (length + 1) / 2;
+
 	while (*str != '\0')
 	{
 		_putchar(*str);
