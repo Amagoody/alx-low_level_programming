@@ -10,21 +10,21 @@
 
 char *leet(char *str)
 {
-	int k, l;
-	char leet_chars[] = "43071";
-	char normal_chars[] = "aeotlAEOTL";
+	int count, len;
+	char lets[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+	char nums[] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
+	char current;
 
-	for (k = 0; str[k] != '\0'; k++)
+	for (len = 0; *(str + len) != '\0'; len++)
 	{
-		for (l = 0; normal_chars[l] != '\0'; l++)
+		current = *(str + len);
+		for (count = 0; count < 10; count++)
 		{
-			if (str[k] == normal_chars[l])
-			{
-				str[k] = leet_chars[l];
-				break;
-			}
+			if (current == lets[count])
+				*(str + len) = nums[count];
 		}
 	}
+
 
 	return (str);
 }
