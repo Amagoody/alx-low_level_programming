@@ -7,7 +7,7 @@
  * Return: There is no expected return value
  */
 
-void jack_bauer(void)
+void jack_beuer(void)
 {
 	int hr;
 	int min;
