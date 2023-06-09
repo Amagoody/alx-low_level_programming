@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_times_table - This prints time table of n
+ * times_table - This prints time table of n
  *
  * @n: This takes number input
  */
