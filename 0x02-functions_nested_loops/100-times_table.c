@@ -5,6 +5,10 @@
  * times_table - This prints time table of n
  *
  * @n: This takes number input
+ * 
+ * Description: This function prints the times table for a given number.
+ * It prints the multiplication table from 1 to 100 for the given number `n`.
+ * Each line represents the multiplication of `n` with the numbers from 1 to 100.
  */
 
 void print_times_table(int n)
