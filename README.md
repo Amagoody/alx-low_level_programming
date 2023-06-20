@@ -1,1 +1,1 @@
-All about Preprocessor in C language
+Kick starting my journey into programing, starting with C language
